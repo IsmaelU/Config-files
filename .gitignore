@@ -1,0 +1,14 @@
+*
+!.gitignore
+!alacrity/
+!awesome/
+!cargo/
+!nvim/
+!psd/
+!starship/
+!sway/
+!waybar/
+!worl/
+!workstyle/
+!wpaperd/
+!zsh/
