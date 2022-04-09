@@ -1,6 +1,6 @@
 *
 !.gitignore
-!alacrity/
+!/alacritty/
 !awesome/
 !cargo/
 !nvim/
@@ -8,7 +8,7 @@
 !starship/
 !sway/
 !waybar/
-!worl/
+!work/
 !workstyle/
 !wpaperd/
 !zsh/
