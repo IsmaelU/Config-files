@@ -20,17 +20,6 @@ output * bg /usr/share/backgrounds/wallpapers/photo-1626285859652-83940d2a5110.j
    }
 
 # Status Bar:
-# Read `man 5 sway-bar` for more information about this section.
-#bar {
-#    position top
-#    status_command while date +'%H:%M:%S %d-%m-%Y '; do sleep 1; done
-#    colors {
-#        statusline #ffffff
-#        background #000000
-#        inactive_workspace #32323200 #32323200 #5c5c5c
-#    }
-#}
-
 bar swaybar_command waybar
 
 # Applications rules
@@ -42,8 +31,6 @@ for_window [class="Nsxiv"] floating enable
 for_window [class="Tor Browser"] floating enable
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; resize set width 480 px height 270 px; sticky on; border 1 px
-for_window [app_id="firefox"] border none
-
 
 gaps inner 5
 default_border pixel 1
