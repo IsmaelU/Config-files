@@ -23,7 +23,7 @@ zstyle ':completion:*' rehash true                              # automatically 
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
-HISTFILE=~/.confgi/zsh/zsh-history
+HISTFILE=~/.config/zsh/zsh-history
 HISTSIZE=1000
 SAVEHIST=500
 export EDITOR=/usr/bin/nvim
