@@ -4,8 +4,6 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 
 ### Output configuration
-output * bg /usr/share/backgrounds/wallpapers/photo-1626285859652-83940d2a5110.jpg fill
-
 
  exec swayidle -w \
           timeout 300 'swaylock -f -c 000000' \
