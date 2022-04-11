@@ -13,6 +13,9 @@
 !/nvim
 !/nvim/*
 
+!/mako/
+!/mako/*
+
 !/psd
 !/psd/*
 
