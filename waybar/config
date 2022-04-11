@@ -29,6 +29,7 @@
         "network",
         "cpu",
         "battery",
+        "backlight",
         "tray",
         "clock#date",
         "clock#time"
@@ -42,7 +43,7 @@
     "battery": {
         "interval": 10,
         "states": {
-            "warning": 30,
+            "warning": 20,
             "critical": 15
         },
         // Connected to AC
@@ -167,7 +168,13 @@
     "tray": {
         "icon-size": 21,
         "spacing": 10
-    }
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""]
+        }
 
 }
 
