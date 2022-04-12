@@ -25,6 +25,9 @@
 !/sway
 !/sway/*
 
+!/swappy/
+!/swappy/*
+
 !/waybar
 !/waybar/*
 
