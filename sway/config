@@ -28,6 +28,7 @@ for_window [app_id="firefox"] floating enable,
 for_window [app_id="imv"] floating enable, resize 960 540
 for_window [class="MuPDF"] floating enable
 for_window [class="Tor Browser"] floating enable
+for_window [app_id="scratchpad-terminal"] move scratchpad, resize set 800 600
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; resize set width 480 px height 270 px; sticky on; border 1 px
 
