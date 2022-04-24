@@ -3,18 +3,10 @@ set $term alacritty
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 
-### Output configuration
-
- exec swayidle -w \
-          timeout 300 'swaylock -f -c 000000' \
-          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-          before-sleep 'swaylock -f -c 000000'
-
 ### Input configuration
    input * {
        xkb_layout "gb"
        tap enabled
-       #natural_scroll enabled
    }
 
 # Status Bar:
@@ -32,9 +24,12 @@ for_window [app_id="scratchpad-terminal"] move scratchpad, resize set 800 600
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; resize set width 480 px height 270 px; sticky on; border 1 px
 
+# Stops swayidle when a screen is fullscreen
+for_window [class=".*"] inhibit_idle fullscreen
+for_window [app_id=".*"] inhibit_idle fullscreen
+
 gaps inner 5
 default_border pixel 1
 
-include /etc/sway/config.d/*
 include ~/.config/sway/keybindings.conf
 include ~/.config/sway/autostart.conf
