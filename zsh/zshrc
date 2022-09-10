@@ -1,6 +1,8 @@
 macchina
 (cat ~/.cache/wal/sequences &)
 
+export PATH="$PATH:~/.config/scripts"
+
 # Starship
 export STARSHIP_CONFIG=~/.config/starship/config.toml
 eval "$(starship init zsh)"
