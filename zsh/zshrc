@@ -1,7 +1,7 @@
 macchina
 (cat ~/.cache/wal/sequences &)
 
-export PATH="$PATH:~/.config/scripts"
+export PATH="$PATH:$HOME/.config/scripts"
 
 # Starship
 export STARSHIP_CONFIG=~/.config/starship/config.toml

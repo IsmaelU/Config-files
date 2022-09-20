@@ -16,12 +16,13 @@ bar swaybar_command waybar
 # Applications rules
 for_window [app_id="mpv"] floating enable, resize set 960 540
 for_window [app_id="org.pwmt.zathura"] floating enable, resize set 960 540
-for_window [app_id="Slack"] floating enable,
+# Slack
+for_window [app_id="Electron"] floating enable,
 for_window [app_id="firefox"] floating enable,
 for_window [app_id="imv"] floating enable, resize 960 540
 for_window [class="MuPDF"] floating enable
 for_window [class="Tor Browser"] floating enable
-for_window [app_id="scratchpad-terminal"] move scratchpad, resize set 800 600
+for_window [app_id="scratchpad-terminal"] move scratchpad, resize set 900 675
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; resize set width 480 px height 270 px; sticky on; border 1 px
 
