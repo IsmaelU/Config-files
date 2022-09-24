@@ -1,6 +1,6 @@
 # My sway config file
 set $term alacritty
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu bemenu-run | xargs swaymsg exec --
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 exec "systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP"
 
