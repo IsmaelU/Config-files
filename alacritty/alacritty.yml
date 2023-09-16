@@ -317,7 +317,7 @@ window:
   #
   # Example:
   #   command:
-  #     program: notify-send
+  #     program: zellij
   #     args: ["Hello, World!"]
   #
   #command: None
